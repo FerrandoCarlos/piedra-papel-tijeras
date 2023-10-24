@@ -20,3 +20,7 @@ body{
     border-radius: 50%;
     margin-bottom: 1rem;
 }
+
+.game-item__image{
+    pointer-events: none;
+}

@@ -1,0 +1,22 @@
+/* FUENTE  */
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    height: 100vh;
+    background-image: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    color:#fff;
+}
+
+.game-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}

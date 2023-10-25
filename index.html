@@ -10,23 +10,44 @@
   <body>
     <!-- HEADER -->
     <header>
-      <span>YOU:</span>
-      <span id="points-user">0</span>
-      <span>PC:</span>
-      <span id="points-pc">0</span>
+      <div class="header-wrapper">
+        <div class="points-container">
+          <div class="points">
+            <span class="score">YOU SCORE:</span>
+            <span class="score-number" id="points-user">0</span>
+          </div>
+          <img class="logo-img" src="./assets/images/logo.svg" alt="logo">
+          <div class="points">
+            <span class="score">PC SCORE:</span>
+            <span class="score-number" id="points-pc">0</span>
+          </div>
+        </div>
+      </div>
     </header>
     <!-- MAIN CONTENT -->
     <main>
       <div id="game-items" class="game-items">
         <!-- iconos -->
         <div class="game-item" data-item="paper">
-          <img src="./assets/images/icon-paper.svg" alt="icon paper" class="game-item__image"/>
+          <img
+            src="./assets/images/icon-paper.svg"
+            alt="icon paper"
+            class="game-item__image"
+          />
         </div>
         <div class="game-item" data-item="rock">
-          <img src="./assets/images/icon-rock.svg" alt="icon rock" class="game-item__image"/>
+          <img
+            src="./assets/images/icon-rock.svg"
+            alt="icon rock"
+            class="game-item__image"
+          />
         </div>
         <div class="game-item" data-item="scissors">
-          <img src="./assets/images/icon-scissors.svg" alt="icon scissors" class="game-item__image"/>
+          <img
+            src="./assets/images/icon-scissors.svg"
+            alt="icon scissors"
+            class="game-item__image"
+          />
         </div>
         <!-- elección -->
         <span>YOU PICKED:</span>

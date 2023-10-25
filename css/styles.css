@@ -1,14 +1,74 @@
 /* FUENTE  */
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
 
-body{
+/* COLOR & GRADIENTS*/
+:root{
+    --dark-text: hsl(229, 25%, 31%);
+    --score-text: hsl(229, 64%, 46%);
+    --header-outline: hsl(217, 16%, 45%);
+    --scissors-gradient: hsl(39, 89%, 49%), hsl(40, 84%, 53%);
+    --Paper-gradient: hsl(230, 89%, 62%),hsl(230, 89%, 65%);
+    --rock-gradient: hsl(349, 71%, 52%),hsl(349, 70%, 56%);
+    --lizard-gradient: hsl(261, 73%, 60%),hsl(261, 72%, 63%);
+    --cyan: hsl(189, 59%, 53%),hsl(189, 58%, 57%);
+    --radial-gradient: hsl(214, 47%, 23%),hsl(237, 49%, 15%);
+}
+/* RESET */
+*{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+}
+
+body{
     font-family: 'Barlow Semi Condensed', sans-serif;
     height: 100vh;
-    background-image: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    background-image: radial-gradient(var(--radial-gradient));
     color:#fff;
 }
+/* HEADER */
+.header-wrapper{
+    height: 99px;
+    border: 3px solid var(--header-outline);
+    border-radius: .5rem;
+    margin: 2rem 2rem;
+}
+
+.points-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px;
+}
+
+.points{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 81px;
+    height: 73px;
+    background-color: #f5f5f5;
+    color: var(--dark-text);
+    padding: 0 10px;
+    border-radius: 0.313rem;
+}
+
+.logo-img{
+    width: 82px;
+    height: 47px;
+}
+
+.score{
+    font-size: .6rem;
+}
+
+.score-number{
+    font-size: 2.3rem;
+}
+/* FIN HEADER */
+
+
 
 .game-item{
     display: flex;
@@ -23,4 +83,8 @@ body{
 
 .game-item__image{
     pointer-events: none;
+}
+
+header{
+    
 }

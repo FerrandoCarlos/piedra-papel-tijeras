@@ -16,7 +16,7 @@
             <span class="score">YOU SCORE:</span>
             <span class="score-number" id="points-user">0</span>
           </div>
-          <img class="logo-img" src="./assets/images/logo.svg" alt="logo">
+          <img class="logo-img" src="./assets/images/logo.svg" alt="logo" />
           <div class="points">
             <span class="score">PC SCORE:</span>
             <span class="score-number" id="points-pc">0</span>
@@ -28,33 +28,45 @@
     <main>
       <div id="game-items" class="game-items">
         <!-- iconos -->
-        <div class="game-item" data-item="paper">
-          <img
-            src="./assets/images/icon-paper.svg"
-            alt="icon paper"
-            class="game-item__image"
-          />
+        <div class="game-item__paper">
+          <div class="game-item" data-item="paper">
+            <img
+              src="./assets/images/icon-paper.svg"
+              alt="icon paper"
+              class="game-item__image"
+            />
+          </div>
         </div>
-        <div class="game-item" data-item="rock">
-          <img
-            src="./assets/images/icon-rock.svg"
-            alt="icon rock"
-            class="game-item__image"
-          />
+        <div class="game-item__rock">
+          <div class="game-item" data-item="rock">
+            <img
+              src="./assets/images/icon-rock.svg"
+              alt="icon rock"
+              class="game-item__image"
+            />
+          </div>
         </div>
-        <div class="game-item" data-item="scissors">
-          <img
-            src="./assets/images/icon-scissors.svg"
-            alt="icon scissors"
-            class="game-item__image"
-          />
+        <div class="game-item__scissors">
+          <div class="game-item" data-item="scissors">
+            <img
+              src="./assets/images/icon-scissors.svg"
+              alt="icon scissors"
+              class="game-item__image"
+            />
+          </div>
         </div>
         <!-- elección -->
-        <span>YOU PICKED:</span>
-        <span id="user-picked"></span>
-        <span>PC PICKED:</span>
-        <span id="pc-picked"></span>
-        <p id="result">YOU WIN</p>
+        <div class="selection-wrapper">
+          <div class="you-selection">
+            <span>YOU PICKED:</span>
+            <span id="user-picked"></span>
+          </div>
+          <div class="pc-selection">
+            <span>PC PICKED:</span>
+            <span id="pc-picked"></span>
+          </div>
+          <p id="result">YOU WIN</p>
+        </div>
       </div>
     </main>
     <!-- SCRIPTS -->
